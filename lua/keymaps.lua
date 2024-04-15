@@ -47,6 +47,9 @@ function ToggleRelativeNumber()
   end
 end
 
+-- Toggle the file explorer sidebar
+vim.api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle<CR>', { noremap = true, silent = true, desc = 'Toggle the File Explorer' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
